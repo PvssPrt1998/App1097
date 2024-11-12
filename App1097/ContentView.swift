@@ -1,24 +1,27 @@
-//
-//  ContentView.swift
-//  App1097
-//
-//  Created by Николай Щербаков on 08.11.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var screen: Screen = .loading
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        switch screen {
+        case .loading:
+            LoadingView(screen: $screen, source: VMCreator.shared.source)
+        case .onboarding:
+            Onboarding(screen: $screen)
+        case .main:
+            Tab()
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+}
+
+enum Screen {
+    case loading
+    case onboarding
+    case main
 }
