@@ -4,6 +4,7 @@ import StoreKit
 struct SettingsView: View {
     
     @Environment(\.openURL) var openURL
+    let source: Source
     
     var body: some View {
         ZStack {
@@ -82,7 +83,7 @@ struct SettingsView: View {
                             )
                         }
                         Button {
-                            
+                            source.resetData()
                         } label: {
                             VStack(spacing: 10) {
                                 Image(systemName: "arrow.counterclockwise")
@@ -129,10 +130,6 @@ struct SettingsView: View {
             UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
         }
     }
-}
-
-#Preview {
-    SettingsView()
 }
 
 extension SKStoreReviewController {

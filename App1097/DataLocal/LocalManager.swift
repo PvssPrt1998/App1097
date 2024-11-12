@@ -160,4 +160,24 @@ final class LocalManager {
         coreDataStack.managedContext.delete(termCD)
         coreDataStack.saveContext()
     }
+    
+    func resetData() throws {
+        let termsCD = try coreDataStack.managedContext.fetch(TermCD.fetchRequest())
+        termsCD.forEach { termCD in
+            coreDataStack.managedContext.delete(termCD)
+        }
+        let casesCD = try coreDataStack.managedContext.fetch(CaseCD.fetchRequest())
+        casesCD.forEach { caseCD in
+            coreDataStack.managedContext.delete(caseCD)
+        }
+        let skinsCD = try coreDataStack.managedContext.fetch(SkinCD.fetchRequest())
+        skinsCD.forEach { skinCD in
+            coreDataStack.managedContext.delete(skinCD)
+        }
+        let portfolios = try coreDataStack.managedContext.fetch(PortfolioCD.fetchRequest())
+        portfolios.forEach { port in
+            coreDataStack.managedContext.delete(port)
+        }
+        coreDataStack.saveContext()
+    }
 }

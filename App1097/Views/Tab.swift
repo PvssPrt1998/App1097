@@ -59,7 +59,7 @@ struct Tab: View {
                     }
                     }
                     .tag(2)
-                SettingsView()
+                SettingsView(source: viewModel.source)
                     .tabItem {
                         VStack {
                             tabViewImage("gear")

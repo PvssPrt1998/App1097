@@ -153,4 +153,12 @@ final class Source: ObservableObject {
         terms.remove(at: index)
         try? lm.remove(term)
     }
+    
+    func resetData() {
+        skins = []
+        cases = []
+        terms = []
+        portfolio = Portfolio(covert: 0, classified: 0, restricted: 0, milspec: 0, industrialGrade: 0, consumerGrade: 0)
+        try? lm.resetData()
+    }
 }

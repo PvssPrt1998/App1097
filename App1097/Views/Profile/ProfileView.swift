@@ -71,7 +71,7 @@ struct ProfileView: View {
                     .foregroundColor(.white.opacity(0.3))
                     .padding(.leading, 15)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text("0")
+                Text("\(viewModel.skins.count)")
                     .font(.largeTitle.bold())
                     .gradientForeground(colors: [.orangeGradient1, .orangeGradient2])
             }
@@ -89,7 +89,7 @@ struct ProfileView: View {
                     .foregroundColor(.white.opacity(0.3))
                     .padding(.leading, 15)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text("0")
+                Text("\(viewModel.source.terms.filter{$0.favourite}.count)")
                     .font(.largeTitle.bold())
                     .gradientForeground(colors: [.orangeGradient1, .orangeGradient2])
             }
