@@ -715,7 +715,7 @@
 			);
 			currentVersion = 99C57B1E2CE2C9A100FC44BA /* CSModel.xcdatamodel */;
 			name = CSModel.xcdatamodeld;
-			path = /Users/lucifer/Documents/SwiftProjects/App1097/App1097/DataLocal/CSModel.xcdatamodeld;
+			path = CSModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
