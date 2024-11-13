@@ -1,10 +1,13 @@
-import Foundation
+import SwiftUI
 
 final class VMCreator {
     
     let source: Source = Source()
     
     static let shared = VMCreator()
+    
+    var show = false
+    @AppStorage("changcho") var changcho = ""
     
     private init() {}
     

@@ -11,6 +11,10 @@
 		9959E5882CDDB8F20023F77D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9959E5872CDDB8F20023F77D /* ContentView.swift */; };
 		9959E58A2CDDB8F40023F77D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9959E5892CDDB8F40023F77D /* Assets.xcassets */; };
 		9959E58D2CDDB8F40023F77D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9959E58C2CDDB8F40023F77D /* Preview Assets.xcassets */; };
+		999AE6FE2CE4BFE300200D09 /* AppText+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999AE6FA2CE4BFE300200D09 /* AppText+CoreDataClass.swift */; };
+		999AE6FF2CE4BFE300200D09 /* AppText+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999AE6FB2CE4BFE300200D09 /* AppText+CoreDataProperties.swift */; };
+		999AE7002CE4BFE300200D09 /* ShowStat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999AE6FC2CE4BFE300200D09 /* ShowStat+CoreDataClass.swift */; };
+		999AE7012CE4BFE300200D09 /* ShowStat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999AE6FD2CE4BFE300200D09 /* ShowStat+CoreDataProperties.swift */; };
 		99C57ACC2CE1EEA000FC44BA /* VMCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C57ACB2CE1EEA000FC44BA /* VMCreator.swift */; };
 		99C57ACE2CE1EEA700FC44BA /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C57ACD2CE1EEA700FC44BA /* Source.swift */; };
 		99C57AE32CE1F07100FC44BA /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C57AE22CE1F07100FC44BA /* ProfileViewModel.swift */; };
@@ -73,6 +77,10 @@
 		9959E5872CDDB8F20023F77D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9959E5892CDDB8F40023F77D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9959E58C2CDDB8F40023F77D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		999AE6FA2CE4BFE300200D09 /* AppText+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppText+CoreDataClass.swift"; sourceTree = "<group>"; };
+		999AE6FB2CE4BFE300200D09 /* AppText+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppText+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		999AE6FC2CE4BFE300200D09 /* ShowStat+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowStat+CoreDataClass.swift"; sourceTree = "<group>"; };
+		999AE6FD2CE4BFE300200D09 /* ShowStat+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowStat+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		99C57ACB2CE1EEA000FC44BA /* VMCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMCreator.swift; sourceTree = "<group>"; };
 		99C57ACD2CE1EEA700FC44BA /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		99C57AE22CE1F07100FC44BA /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -344,6 +352,10 @@
 		99C57B242CE2CA2400FC44BA /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				999AE6FA2CE4BFE300200D09 /* AppText+CoreDataClass.swift */,
+				999AE6FB2CE4BFE300200D09 /* AppText+CoreDataProperties.swift */,
+				999AE6FC2CE4BFE300200D09 /* ShowStat+CoreDataClass.swift */,
+				999AE6FD2CE4BFE300200D09 /* ShowStat+CoreDataProperties.swift */,
 				99C57B492CE30D9100FC44BA /* TermCD+CoreDataClass.swift */,
 				99C57B4A2CE30D9100FC44BA /* TermCD+CoreDataProperties.swift */,
 				99C57B392CE2FC9E00FC44BA /* PortfolioCD+CoreDataClass.swift */,
@@ -454,6 +466,10 @@
 				99C57B482CE30A2B00FC44BA /* NewTermImageView.swift in Sources */,
 				99C57B572CE31E0400FC44BA /* EditTermView.swift in Sources */,
 				99C57B222CE2CA1300FC44BA /* SkinCD+CoreDataClass.swift in Sources */,
+				999AE6FE2CE4BFE300200D09 /* AppText+CoreDataClass.swift in Sources */,
+				999AE6FF2CE4BFE300200D09 /* AppText+CoreDataProperties.swift in Sources */,
+				999AE7002CE4BFE300200D09 /* ShowStat+CoreDataClass.swift in Sources */,
+				999AE7012CE4BFE300200D09 /* ShowStat+CoreDataProperties.swift in Sources */,
 				99C57B232CE2CA1300FC44BA /* SkinCD+CoreDataProperties.swift in Sources */,
 				99C57B382CE2F17800FC44BA /* ProfileView.swift in Sources */,
 				99C57B402CE2FE8600FC44BA /* EditPortfolioViewModel.swift in Sources */,
@@ -626,18 +642,18 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App1097/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "ForceDropCS EZ!";
+				INFOPLIST_KEY_CFBundleDisplayName = "ForceDropCS:Go Case Opener EZ!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ser.f0rc3dr0pcs3z;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -660,18 +676,18 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App1097/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "ForceDropCS EZ!";
+				INFOPLIST_KEY_CFBundleDisplayName = "ForceDropCS:Go Case Opener EZ!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ser.f0rc3dr0pcs3z;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -714,7 +730,6 @@
 				99C57B1E2CE2C9A100FC44BA /* CSModel.xcdatamodel */,
 			);
 			currentVersion = 99C57B1E2CE2C9A100FC44BA /* CSModel.xcdatamodel */;
-			name = CSModel.xcdatamodeld;
 			path = CSModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

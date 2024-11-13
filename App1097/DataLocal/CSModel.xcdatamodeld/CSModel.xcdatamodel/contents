@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppText" representedClassName=".AppText" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" defaultValueString="swim0name1row2down3stat4look5"/>
+    </entity>
     <entity name="CaseCD" representedClassName=".CaseCD" syncable="YES">
         <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -13,6 +16,9 @@
         <attribute name="industrialgrade" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="milspec" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="restricted" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ShowStat" representedClassName=".ShowStat" syncable="YES">
+        <attribute name="show" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
     </entity>
     <entity name="SkinCD" representedClassName=".SkinCD" syncable="YES">
         <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>

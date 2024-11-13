@@ -52,6 +52,7 @@ struct Onboarding: View {
             .frame(maxHeight: .infinity, alignment: .top)
         }
         .onAppear {
+            AppDelegate.orientationLock = .portrait
             UIScrollView.appearance().bounces = false
         }
         .onDisappear {
